@@ -59,9 +59,11 @@ body{
     border: 0;
     border-radius: 50px;
     transition: ease-in 500ms;
+    font-weight: 400;
 }
 
-.learn-more:hover{
+.learn-more:hover,
+.learn-more:focus{
     cursor: pointer;
     color: #fff;
     border: 2px solid #fff;
