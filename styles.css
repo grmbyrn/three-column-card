@@ -1,5 +1,21 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-gray: hsl(0, 0%, 95%);
+}
+
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -11,48 +27,54 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    width: 327px;
-    height: 1326px;
+    width: 20.4375rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 3.125rem;
+}
+
+.car-img,
+.heading,
+.content,
+.learn-more{
+    margin-bottom: 2rem;
 }
 
 .flex-item-one{
-    background-color: #E28625;
+    background-color: var(--clr-bright-orange);
     border-radius: 10px 10px 0 0;
 }
 
 .flex-item-two{
-    background-color: #006971;
+    background-color: var(--clr-dark-cyan);
 }
 
 .flex-item-three{
-    background-color: #004140;
+    background-color: var(--clr-very-dark-cyan);
     border-radius: 0 0 10px 10px;
 }
 
 .flex-item-one,
 .flex-item-two,
 .flex-item-three{
-    padding: 30px 40px 50px 40px;
+    padding: 1.875rem 2.5rem 3.125rem 2.5rem;
 }
 
 .heading{
     font-family: 'Big Shoulders Display', cursive;
-    color: hsl(0, 0%, 95%);
+    color: var(--clr-transparent-white);
     font-size: 40px;
     padding: -30px 0 -30px 0;
 }
 
 .content{
-    color: hsla(0, 0%, 100%, 0.75);
-    padding-bottom: 20px;
-    line-height: 25px;
+    color: var(--clr-very-light-gray);
+    padding-bottom: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .learn-more{
-    height: 40px;
+    height: 2.5rem;
     width: 140px;
     cursor: pointer;
     padding: 0;
@@ -65,36 +87,35 @@ body{
 .learn-more:hover,
 .learn-more:focus{
     cursor: pointer;
-    color: #fff;
-    border: 2px solid #fff;
+    color: var(--clr-very-light-gray);
+    border: 2px solid var(--clr-very-light-gray);
 }
 
 .sedan{
-    color: #E28625;
-    
+    color: var(--clr-bright-orange);
 }
 
 .suv{
-    color: #006971;
+    color: var(--clr-dark-cyan);
 }
 
 .luxury{
-    color: #004140;
+    color: var(--clr-very-dark-cyan);
 }
 
 .sedan:hover,
 .sedan:focus{
-    background-color: #E28625;
+    background-color: var(--clr-bright-orange);
 }
 
 .suv:hover,
 .suv:focus{
-    background-color: #006971;
+    background-color: var(--clr-dark-cyan);
 }
 
 .luxury:hover,
 .luxury:focus{
-    background-color: #004140;
+    background-color: var(--clr-very-dark-cyan);
 }
 
 @media (min-width: 800px){
@@ -105,11 +126,11 @@ body{
     }
 
     .content{
-        padding-bottom: 70px;
+        padding-bottom: 4.375rem;
     }
 
     .flex-item-one{
-        background-color: #E28625;
+        background-color: var(--clr-bright-orange);
         border-radius: 10px 0 0 10px;
     }
 
